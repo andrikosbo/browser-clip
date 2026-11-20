@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Browser Clip device artwork</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    width: 1280px;
+    height: 720px;
+    background: radial-gradient(ellipse at 55% 69%, #50324f 0%, #211a36 46%, #11121f 86%);
+    overflow: hidden;
+  }
+  .chassis {
+    position: absolute;
+    inset: 47px 141px 106px;
+    border: 1px solid #655f74;
+    border-radius: 16px 16px 7px 7px;
+    background: linear-gradient(155deg,#262334,#101019 61%);
+    box-shadow: 0 22px 76px 5px #070711bb, 0 0 45px #ba8afd2c;
+  }
+  .base {
+    position: absolute;
+    top: 611px;
+    inset-inline: 97px;
+    height: 26px;
+    border-radius: 5px 5px 56% 56% / 4px 4px 75% 75%;
+    background: linear-gradient(#81788e, #332a45 35%, #1a1428 80%);
+  }
+  .base::before {
+    content: "";
+    position: absolute;
+    left: 446px;
+    top: 0;
+    width: 194px;
+    height: 7px;
+    border-radius: 0 0 16px 16px;
+    background: #332c43;
+  }
+</style>
+<body>
+  <div class="chassis"></div>
+  <div class="base"></div>
+</body>
+</html>

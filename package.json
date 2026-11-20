@@ -1,0 +1,17 @@
+{
+  "name": "browser-clip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turn a local web page into a framed MP4 and a poster.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "bin": {"browser-clip": "bin/browser-clip.mjs"},
+  "scripts": {
+    "doctor": "node bin/browser-clip.mjs doctor",
+    "demo": "node bin/browser-clip.mjs record",
+    "test": "node --test",
+    "test:unit": "node --test test/unit.test.mjs"
+  },
+  "dependencies": {"playwright": "1.65.1"}
+}
